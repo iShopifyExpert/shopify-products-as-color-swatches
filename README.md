@@ -60,6 +60,9 @@ Your product handles should follow a consistent naming pattern, such as:
       aka-mens-solid-polo-shirt-classic-fit-black
       aka-mens-solid-polo-shirt-classic-fit-navy
 
+      mens-black-solid-polo-shirt-classic-fit-pique-chambray-collar-large-sizes
+      mens-navy-solid-polo-shirt-classic-fit-pique-chambray-collar-large-sizes
+
 ✅ Requirements
 You must use consistent product handles where the color name can be replaced.
 Colors in the list must match those in the URL (handleized format).
