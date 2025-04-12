@@ -39,7 +39,7 @@ and replace with this
     },
     {
       "type": "custom_product_varient",
-      "name": "custom_product_varient",
+      "name": "Custom Product Varient",
       "limit": 1,
       "settings": [
         {
@@ -52,6 +52,8 @@ and replace with this
     },
 ]
 ```
+now go to the customization > Product page > add that block called Custom Product Varient and inside that a field add all your avaibale colors list here
+
 🖼 Example Handle Structure
 Your product handles should follow a consistent naming pattern, such as:
 
