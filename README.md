@@ -19,7 +19,46 @@ This Shopify Liquid snippet dynamically displays related products as clickable c
 
 ## 💡 Usage
 
-1. Copy the main code into a Shopify snippet or section.
-2. Update the `colors` variable with all colors used across your product handles:
-   ```liquid
-   {% assign colors = 'Black,White,Red,Blue,Navy,Turquoise,...' | split: ',' %}
+1. Create a snippet called colors-as-products.liquid
+2. Copy the main code into a Shopify snippet
+3. Find this in Sections > main-product.liquid
+```liquid
+   {%- when '@app' -%}
+```
+and replace with this
+```liquid
+   {%- when 'custom_product_varient' -%}
+     {% render 'colors-as-products', product: product, block: block %}
+   {%- when '@app' -%}
+```
+4. Need to add the schema also
+```json
+"blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "custom_product_varient",
+      "name": "custom_product_varient",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "all_colors",
+          "default": "red,blue",
+          "label": "Add All Color"
+        },
+      ]
+    },
+]
+```
+🖼 Example Handle Structure
+Your product handles should follow a consistent naming pattern, such as:
+
+      aka-mens-solid-polo-shirt-classic-fit-black
+      aka-mens-solid-polo-shirt-classic-fit-navy
+
+✅ Requirements
+You must use consistent product handles where the color name can be replaced.
+Colors in the list must match those in the URL (handleized format).
+
