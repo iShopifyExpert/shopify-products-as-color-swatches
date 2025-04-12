@@ -45,7 +45,7 @@ and replace with this
         {
           "type": "textarea",
           "id": "all_colors",
-          "default": "red,blue",
+          "default": "Cream,Turquoise,Dark Yellow,Aqua,Spring Green,Maize,Coral,Burgundy,Heather Blue,Tangerine,Black,White,Sand,Red,Navy",
           "label": "Add All Color"
         },
       ]
