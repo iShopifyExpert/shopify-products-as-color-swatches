@@ -1,0 +1,1 @@
+# shopify-products-as-color-swatches
